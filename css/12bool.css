@@ -9,6 +9,7 @@
     border: 1px solid black;
     background-color: pink;
     padding: 10px;
+    position: relative;
 }
 
 .debug .container > [class*="col-"] .container {
@@ -18,10 +19,6 @@
 .debug .container > [class*="col-"] .container [class*="col-"] {
     background-color: coral;
     height: 100%;
-}
-
-.debug [class*="col-"] {
-    position: relative;
 }
 
 .debug [class*="col-"] span {
@@ -105,3 +102,8 @@
     width: calc(100% / 12 *12);
 }
 /* end columns  */
+
+/* offset  */
+.col-offset-1 {
+    margin-left: calc(100% / 12 *1);
+}
